@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SKP Analyzer - Input</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+  <!-- Header -->
+  <header class="bg-blue-900 text-white flex items-center justify-between px-8 py-4 shadow">
+    <div class="flex items-center space-x-3">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Logo_BKN.png" alt="Logo BKN" class="h-10">
+      <h1 class="text-xl font-semibold">SKP Analyzer</h1>
+    </div>
+    <div class="text-sm opacity-80">AI Digital ASN Hackathon 2025</div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="flex justify-center items-center h-[85vh]">
+    <div class="bg-white rounded-2xl shadow-xl w-[700px] p-8">
+
+      <h2 class="text-2xl font-semibold text-blue-900 mb-6">Input SKP</h2>
+
+      <!-- Tabs -->
+      <div class="flex space-x-4 mb-6">
+        <button class="px-4 py-2 bg-blue-100 text-blue-800 rounded-lg font-medium">Input Teks</button>
+        <button class="px-4 py-2 bg-gray-100 text-gray-600 rounded-lg font-medium hover:bg-gray-200">Upload Dokumen</button>
+      </div>
+
+      <!-- Text Area -->
+      <textarea placeholder="Ketik rincian Sasaran Kinerja Pegawai di sini..."
+        class="w-full border border-gray-300 rounded-lg p-4 h-40 focus:ring-2 focus:ring-blue-400 focus:outline-none mb-4"></textarea>
+
+      <!-- Upload Button -->
+      <div class="flex items-center space-x-3 mb-6">
+        <button class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg font-medium shadow">
+          Pilih File PDF/DOCX
+        </button>
+        <span class="text-gray-500 text-sm">Belum ada file yang diunggah.</span>
+      </div>
+
+      <!-- Data Form -->
+      <div class="grid grid-cols-2 gap-4 mb-6">
+        <input type="text" placeholder="Nama Pegawai" class="border rounded-lg p-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+        <input type="text" placeholder="Unit Kerja" class="border rounded-lg p-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+        <input type="text" placeholder="Pilih Atasan Penilai" class="border rounded-lg p-2 focus:ring-2 focus:ring-blue-400 focus:outline-none">
+        <div class="flex items-center justify-between border rounded-lg p-2">
+          <span>Mode Fungsional</span>
+          <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox" checked class="sr-only peer">
+            <div class="w-10 h-5 bg-gray-300 rounded-full peer-checked:bg-blue-500 relative">
+              <div class="absolute left-1 top-0.5 bg-white w-4 h-4 rounded-full transition-all peer-checked:translate-x-5"></div>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Run Button -->
+      <div class="text-center">
+        <button onclick="window.location.href='analysis.html'"
+          class="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white px-8 py-3 rounded-xl font-semibold shadow-lg">
+          RUN ANALISIS AI
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
